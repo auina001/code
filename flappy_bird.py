@@ -101,7 +101,7 @@ def init_obj(): # initialisering av objekter
 
 init_obj()
 
-def collision(c, r, y, m): # c; character, r; rektangel, y; ekstra y_pos for den nedre firkanten, m; margin
+def collision(c, r, y, m): # c; circle , r; rektangel, y; ekstra y_pos for den nedre firkanten, m; margin
     # x- og y-distanse mellom sirkel og firkant:
     dist_x = abs(c.x_pos - r.x_pos - r.width/2)
     dist_y = abs(c.y_pos - r.y_pos - y - r.height/2) 
